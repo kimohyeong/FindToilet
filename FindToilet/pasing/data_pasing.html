@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>공공데이터 테스트</title>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+
+    <script type="text/javascript" src="http://openapi.map.naver.com/openapi/v2/maps.js?clientId=ldpZyW_9Rsnhu3ZEHBHO"></script>
+    <script src="data.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<h1>근처 공공화장실 검색</h1>
+		<button type="button" id="Button1">click</button>
+
+		<div class="beforedata">
+			<h3>가공전 데이터(XML)(일부)</h3>
+			<textarea id="Bdata" rows="35" cols="80">기본값</textarea>
+		</div>
+		<div class="afterdata">
+			<h3>가공후 데이터</h3>
+			<textarea id="Adata" rows="35" cols="80">기본값</textarea>
+		</div>
+		<div class="map">
+			<div id="testMap">
+				<h3>지도(마우스로 이동,확대 가능)</h3>	
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  	<script src="jquery.xdomainajax.js"></script>	
+  	
+   
+	</body>
+</html>
